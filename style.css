@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.body{
+    width: 100%;
+}
+
+.nav {
+    align-items: space-between;
+    display: flex;
+    width: 80%;
+    height: 100px;
+    margin-left: 10%;
+}
+
+.navigate {
+    width: 20%;
+    display: flex;
+    justify-content: left;
+
+}
+
+.navbar {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+
+}
+
+.navbar span {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    transition: .4s;
+    border-radius: 4px;
+    background-color: black;
+}
+
+.navbar span:nth-child(1) {
+    width: 25px;
+    left: 15px;
+    transform: translateY(-10px);
+
+}
+
+.navbar.active span:nth-child(1) {
+    width: 30px;
+    transform: translateY(0px) rotate(45deg);
+    transition-delay: 0.125s;
+
+}
+
+.navbar span:nth-child(2) {
+    width: 15px;
+    left: 15px;
+    transform: translateY(10px);
+
+}
+
+.navbar.active span:nth-child(2) {
+    transition-delay: 0.25s;
+
+    width: 30px;
+    transform: translateY(0px) rotate(315deg);
+
+}
+
+.navbar.active span:nth-child(3) {
+    width: 15px;
+    left: 15px;
+    transform: translateX(50px);
+
+}
+
+
+
+.log {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-weight: 300;
+}
+
+.none {
+    width: 20%;
+}
+
+.op {
+     width: 100%;
+
+    height:fit-content;
+    padding: 20px 0;
+    z-index: 1;
+    top:-800px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.562);;
+    position: absolute;
+    transition-duration: 1s;
+
+}
+
+.op.open {
+    z-index: 1;
+    top:125px;
+
+}
+.lp{
+   text-align: center;
+   display: flex;
+   justify-content: center;
+
+
+}
+
+.kop{
+    margin-top: 0px;
+    display:flex;
+     justify-content: center;
+     gap: 10px;
+      overflow: hidden;
+      height: 0px;
+    transition: all .5s;
+   
+     }
+
+
+.more{
+    width: fit-content;
+}
+.gp:hover > .kop {
+    border-bottom: 2px solid #fff;
+     margin-top: 20px;
+    transition: all .5s;
+    overflow:visible;
+    flex-wrap: wrap;
+    height:45px;
+
+    
+}
+
+
+
+.ji{
+    display: flex;
+    justify-content: center;
+
+
+}
+.options{
+    width: fit-content;
+    font-size: 20px;
+    cursor: pointer;
+    color:#fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+
+}
+.yop {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    width: fit-content;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+
+
+
+}
+.yop:hover{
+    border-bottom: 2px solid #fff;
+
+}
+
+
+@media (max-width:560px) {
+    .gp:hover > .kop {
+        border-bottom: 2px solid #fff;
+         margin-top: 20px;
+        transition: all .5s;
+        overflow:visible;
+        flex-wrap: wrap;
+
+        height:80px;
+    
+        
+    }
+    .options{
+        font-size: 18px;
+    }
+    
+}
+
+
+@media (max-width:480px) {
+    .logo{
+        font-size: 40px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+.header{
+    width: 100%;
+   overflow: hidden;
+
+
+
+}
+.first{
+    width: 100%;
+    margin-top: 25px;
+   float: left;
+    display: flex;
+
+}
+
+.imgw{
+    width: 33.333333333333%;
+   transition: .3s;
+   float:left;
+
+
+}
+.imgw:hover{
+   transform: scale(1.1);
+   float:left;
+   transition: .3s;
+
+}
+
+.imgw:hover .over{
+    display:flex;
+    transition: all .4s;
+    background-color: rgba(0, 0, 0, 0.377);
+
+
+}
+.absop{
+    position:absolute;
+    text-align: center;
+    top: 0%;
+  
+
+    text-align: center;
+}
+
+.jop{
+    width: 100%;
+    
+    object-fit: cover;
+}
+.lines{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+}
+.line{
+    width: 90px;
+    height: 2px;
+    background-color: #fff;
+}
+.kim{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.jim{
+    margin-top: 30px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+.over{
+    height:99.2%;
+    display: none;
+    width: 100%;
+    position:absolute;
+    text-align: center;
+    transition: .4s;
+
+    top: 0%;
+    
+}
+
+
+a{
+    text-decoration: none;
+}
+
+@media (max-width:760px) {
+    .first{
+        flex-direction: column;
+        width: 100%;
+    }
+    .imgw{
+        margin-top: -4px;
+        width: 100%;
+    }
+    .over{
+        height: 99.61%;
+    }
+    .op.open {
+
+        top:120px;
+    
+    }
+    
+}
+
+@media (max-width:600px) {
+    .over{
+        height: 99.46%;
+    }
+    
+}
+
+@media (max-width:450px) {
+    .over{
+        height: 99.2%;
+    }
+    
+}
+
+.secend{
+    width: 100%;
+    margin-top: -4px;
+   float: left;
+    display: flex;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rop{
+    width: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:760px) {
+    .rop{
+        width: 100%;
+    }
+    
+}
+
+
+
+.third{
+    width: 100%;
+    margin-top: -4px;
+   float: left;
+   height: auto;
+    display: flex;
+
+}
+
+.gol{
+    width: 25%;
+}
+.how{
+    width: 50.38%;
+}
+
+
+@media (max-width:760px) {
+    .gol{
+        width: 100%;
+    }
+    .how{
+        width: 100%;
+    }
+}
